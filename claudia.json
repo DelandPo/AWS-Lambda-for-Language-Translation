@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "tran-language-executor",
+    "name": "tran-language",
+    "region": "us-east-1"
+  }
+}
