@@ -1,5 +1,5 @@
 const RapidAPI = require('rapidapi-connect');
-const rapid = new RapidAPI("default-application_599635c0e4b028109d40f323", "664e0992-ede1-4fc6-8a63-16e6001c75b7");
+const rapid = new RapidAPI(<your>,<key>);
 
 
 const langCodes = {
@@ -65,7 +65,7 @@ exports.handler = (event, context) => {
                                 console.log("Sentence : "+ptext);
                                 console.log("Language Code :"+langCode);
                                 rapid.call('GoogleTranslate', 'translate', {
-                                    'apiKey': 'AIzaSyAiKm5vqqjwZ22qxEb4OqCWq9zD1AHxWD0',
+                                    'apiKey': <your api key>,
                                     'string': ptext,
                                     'targetLanguage': langCode
                         
